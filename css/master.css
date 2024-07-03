@@ -548,6 +548,7 @@ margin-bottom: 0;
         bottom: 0;
         left: 0;
         display: flex;
+        z-index: 10000;
 
        }
        .contact-buttons a {
