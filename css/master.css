@@ -14,103 +14,51 @@ html{
 }
 /* start header */
 .header {
-  background-color: #54595F;
-  text-align: right;
-  min-height: 250px;
-  position: relative;
+  background-color: #eee;
+  
 }
 .header .container {
  padding: 15px 50px;
 }
 .header .container .nav {
   display: flex;
-  justify-content: flex-end;
-  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  
+  
 }
-.header .container .nav a {
-    color: #fff;
-    text-decoration: none;
-    line-height: 1;
-    font-size: 18px;
-   
-}
+
 .header .container .nav img.logo {
-top: 15px;
-position: absolute;
-left: 20px;
 width: 100px;
 border-radius: 50%;
 }
-.call-section {
-    display: flex;
-}
-.header .container #call-us {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 50px;
-    color: white;
+.header .nav .contact-us a {
     text-decoration: none;
-    padding: 10px 30px;
-    background-color: #42964d;
+    color: #222;
+    font-weight: bold;
     font-size: 22px;
-    border: 1px solid #fff;
-    text-align: center;
-    transition: 0.2s;
+    padding: 8px 15px;
 }
-.header .container #call-us:hover {
-    border-color: blueviolet;
-}
-.header .container .online {
-    position: absolute;
-    color: #fff;
-    left: 50%;
-    bottom: 15px;
-    transform: translateX(-50%);
-    font-size: 20px;
-    margin-top: 15px;
-    
-}
-.header .container img.on {
- width: 14px;
- position: absolute;
- bottom: 25px;
- left: calc(50% + 50px);
-}
+
+
+
+
     
 
 @media (max-width: 767px) {
-    .header .container .nav a {
-        font-size: 12px;
-    }
+    
     .header .container {
         padding: 15px;
         width: 100%;
         margin: 0;
     }
     .header .container .nav {
-        gap: 5px;
-        justify-content: flex-end;
+
     }
-    .header .container img.logo {
-        right: 10px;
-        margin-top: 20px;
-        padding: 0;
+    .header .container .nav img.logo {
+      width: 50px;
     }
-    .header .container #call-us {
-        font-size: 15px;
-        padding: 3px 20px;
-    } 
-    .header .container .online {
-        font-size: 15px;
-        bottom: 22px;
-    }
-    .header .container img.on {
-    width: 10px;
-    position: absolute;
-    bottom: 30px;
-    left: calc(50% + 38px);
-    }
+    
     
     }
 /* end header */
@@ -162,11 +110,20 @@ border-radius: 50%;
    
 }
 /* end slider-1 */
+/* start new */
+
+.new-niletrips .container {
+ direction: rtl;
+ padding: 15px 50px;
+}
+
+/* end new */
 /* start nile trips */
 .nile-trips {
     padding-top: 50px;
     padding-bottom: 50px;
     direction: rtl;
+    background-color: #eee;
 }
 .nile-trips .container {
     display: grid;
@@ -295,6 +252,7 @@ gap: 50px;
 .section-two {
  padding-top: 60px;
  padding-bottom: 30px;
+ background-color: #eee;
 }
 .section-two .container {
  padding: 0 100px;
@@ -403,6 +361,7 @@ margin-bottom: 0;
     min-height: 720px;
     direction: rtl;
     padding-bottom: 50px;
+    background-color: #eee;
 }
 .slider-4 .slider-box {
     text-align: center;
@@ -479,25 +438,11 @@ margin-bottom: 0;
 }
 
 /* end slider 4  */
-/* start video container */
- .video-container {
-            position: relative;
-            height: 100vh;
-            width: 100%;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-        }
-/* end video container */
 /* start footer */
 .footer {
  padding-top: 20px;
- background-image: url(../imgs/);
-
+ 
+ 
 }
 .footer .container {
  text-align: center;
@@ -545,28 +490,29 @@ margin-bottom: 0;
 /* contact buttons */
        .contact-buttons {
         position: fixed;
-        width: 100%;
-        height: 50px;
-        bottom: 0;
-        left: 0;
+        left: 15px;
+        width: 30px;
         display: flex;
+        flex-direction: column;
+        bottom: 30px;
+        gap: 8px;
         z-index: 10000;
-
        }
        .contact-buttons a {
-        flex: 1;
+        
         text-align: center;
         color: #fff;
-        font-size: 20px;
+        font-size: 15px;
         padding: 5px 0;
         display: none;
+        border-radius: 50%;
 
        }
        .contact-buttons a.whatsapp {
-        background-color: #01e675;
+        background-color: #01e673d7;
        }
        .contact-buttons a.mobile {
-        background-color: #04a43e;
+        background-color: #04a43fd2;
        }
        @media (max-width: 767px) {
         .contact-buttons a {
@@ -578,9 +524,7 @@ margin-bottom: 0;
         .footer {
             padding-bottom: 100px;
         }
-        .video-container {
-            height: 250px;
-        }
+        
        }
 
 
