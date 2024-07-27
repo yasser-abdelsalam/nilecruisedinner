@@ -34,10 +34,12 @@ html{
     font-size: 18px;
    
 }
-.header .container img.logo {
-margin-top: 20px;
+.header .container .nav img.logo {
+top: 15px;
 position: absolute;
-right: 70px;
+left: 20px;
+width: 100px;
+border-radius: 50%;
 }
 .call-section {
     display: flex;
@@ -349,7 +351,7 @@ gap: 50px;
 
 
 
-.slider-3 .container .text-one {
+.slider-3 .container .text-one p.head{
     font-weight: bold;
 }
 .slider-3 .container .text-two p.main-text {
